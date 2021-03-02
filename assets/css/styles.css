@@ -305,6 +305,16 @@ a[aria-expanded="true"] {
   margin-bottom: 30px;
   color: white;
   font-size: 26px;
+  text-transform: uppercase;
+}
+
+#hobbies .content a {
+  color: pink;
+  font-size: 16px;
+}
+
+#hobbies .content a:hover {
+  color: pink;
 }
 
 .section .content .more-link .svg-inline--fa {
@@ -338,8 +348,12 @@ a[aria-expanded="true"] {
   font-size: 16px;
 }
 
-.projects .item .title {
+.projects .item .title, a {
   color: #778492;
+}
+
+.projects .item .title a:hover{
+  color: pink;
 }
 
 /* Work Section */
