@@ -7,7 +7,7 @@
  * Website: https://themes.3rdwavemedia.com/
 */
 body {
-  font-family: 'Roboto', arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   background: #484848;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
@@ -15,8 +15,13 @@ body {
   margin-top: 2%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #ffffff;
 }
@@ -28,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
 } */
-
 
 /* .btn, a.btn {
   -webkit-transition: all 0.4s ease-in-out;
@@ -148,26 +152,36 @@ a.dotted-link:hover {
 }
 
 .typewriter h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid pink; /* The typwriter cursor */
+  border-right: 0.15em solid pink; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: 0.15em; /* Adjust as needed */
   padding-top: 10px;
-  animation: typing 1.3s steps(10, end), blink-caret .75s steps(50, end) infinite;
+  animation: typing 1.3s steps(10, end),
+    blink-caret 0.75s steps(50, end) infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 10% }
-  to { width: 100% }
+  from {
+    width: 10%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: pink }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: pink;
+  }
 }
 
 /* ======= Header ======= */
@@ -190,7 +204,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a:hover {
-  text-decoration:wavy;
+  text-decoration: wavy;
   background: pink;
 }
 
@@ -224,7 +238,7 @@ a.dotted-link:hover {
 /* ======= Sidebar ======= */
 
 .wrapper {
-  display: flex;
+  display: block;
   width: 100%;
 }
 
@@ -245,7 +259,7 @@ a.dotted-link:hover {
 }
 
 #sidebar .sidebar-header .typewriter h3 {
-  animation: typing 1.3s steps(10, end), blink-caret .75s steps(50, end);
+  animation: typing 1.3s steps(10, end), blink-caret 0.75s steps(50, end);
 }
 
 #sidebar ul.components {
@@ -265,14 +279,15 @@ a.dotted-link:hover {
   text-decoration: none;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
   border-left: 4px solid pink;
   color: black;
   font-weight: 600;
 }
 
 /* ======= Sections======= */
- .sections-wrapper {
+.sections-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -281,7 +296,7 @@ a.dotted-link:hover {
   margin-bottom: 30px;
   background-color: #242424;
   color: white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .section .section-inner {
@@ -300,7 +315,7 @@ a.dotted-link:hover {
   font-size: 14px;
   position: relative;
   top: -2px;
-} 
+}
 
 .main-content {
   margin-left: 250px;
@@ -506,7 +521,7 @@ a.dotted-link:hover {
 .aside .subheading {
   font-size: 18px;
   color: #545e69;
-} 
+}
 
 @media (max-width: 767.98px) {
   .header {
@@ -526,6 +541,60 @@ a.dotted-link:hover {
   }
   .project-image {
     margin-bottom: 15px;
+  }
+
+  .main-content {
+    margin-left: 0px;
+  }
+
+  .sidebar {
+    opacity: 0;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sidebar.active {
+    opacity: 1;
+  }
+
+  #sideBarButton{
+    margin-bottom: 25px;
+    margin-left: 10px;
+    background-color: pink;
+    border: none;
+  }
+
+  #dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
+}
+
+@media (min-width: 767.98px) {
+  #dismiss {
+    display: none;
+  }
+
+  #sideBarButton {
+    display:none;
   }
 }
 

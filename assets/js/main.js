@@ -14,6 +14,19 @@ $(window).on("load", function () {
 jQuery(document).ready(function ($) {
   /* Page Animations */
 
+$('#dismiss, .overlay').on('click', function () {
+    // hide sidebar
+    $('#sidebar').removeClass('active');
+});
+
+$('#sideBarButton').on('click', function () {
+    // open sidebar
+    $('#sidebar').addClass('active');
+    // fade in the overlay
+    $('.collapse.in').toggleClass('in');
+    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+});
+
   /*======= Skillset *=======*/
 
   $(".level-bar-inner").css("width", "0");

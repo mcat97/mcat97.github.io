@@ -28,7 +28,10 @@
 
 <div class="wrapper">
     <!-- Sidebar -->
-    <nav id="sidebar">
+    <nav id="sidebar"  class="sidebar">
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
         <div class="sidebar-header">
             <img class="profile-image img-fluid float-left" src="assets/images/smallcat.png" alt="profile image" />
             <div class="typewriter">
@@ -54,6 +57,10 @@
     <div class="typewriter">
         <h3>ABOUT ME</h3>
     </div>
+    <button type="button" id="sideBarButton" class="btn btn-info">
+        <i class="fas fa-align-left"></i>
+        <span>Toggle Sidebar</span>
+    </button>
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
@@ -253,6 +260,7 @@
             </div>
         </div>
     </div>
+    <div class="overlay"></div>
 </div>
 
 <!-- Javascript -->
@@ -260,13 +268,9 @@
 <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-<!-- github calendar plugin -->
-<script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-<!-- github activity plugin -->
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
 <!-- custom js -->
 <script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>
 
 </html>
