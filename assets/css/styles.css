@@ -1,4 +1,4 @@
-/*!   
+/*!
  * Template Name: Developer - Portfolio Landing Page Template for Developers
  * Version: 2.5
  * Author: Xiaoying Riley
@@ -81,8 +81,8 @@ a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):act
   background: #484848;
   border: 1px solid white;
   color: #fff;
-} 
-/* 
+}
+/*
 .text-highlight {
   color: pink;
 } */
@@ -356,6 +356,30 @@ a[aria-expanded="true"] {
   color: pink;
 }
 
+/* Certifications Section */
+.certifications .item {
+  margin-bottom: 30px;
+}
+
+.certifications .item .title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.certifications .item .summary {
+  font-size: 16px;
+}
+
+.certifications .item .title, a {
+  color: #778492;
+}
+
+.certifications .item .title a:hover{
+  color: pink;
+}
+
 /* Work Section */
 .experience .item {
   margin-bottom: 30px;
@@ -419,6 +443,14 @@ a[aria-expanded="true"] {
 
 .info .svg-inline--fa.fa-envelope-o {
   font-size: 14px;
+}
+
+.info .heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 
 .info ul {
