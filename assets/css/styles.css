@@ -317,6 +317,10 @@ a[aria-expanded="true"] {
   color: pink;
 }
 
+#hobbies .content .summary {
+  font-size: 16px;
+}
+
 .section .content .more-link .svg-inline--fa {
   margin-right: 5px;
   font-size: 14px;
