@@ -407,10 +407,16 @@ a[aria-expanded="true"] {
   font-weight: normal;
 }
 
-.experience .item li {
+.experience .item details {
   color: #999;
   font-weight: normal;
   font-size: 20px;
+}
+
+.experience .item li {
+  color: #999;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 /* Git section */
